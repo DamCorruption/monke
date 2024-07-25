@@ -7,6 +7,8 @@ async function showAlert() {
     if (!response.ok) {
 alert('failed fetching');
     }else{
+        const data = await response.json();
+        console.log(data)
     alert('Button clicked!');
     }
 }
